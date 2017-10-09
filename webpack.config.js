@@ -1,9 +1,8 @@
-const $ = require('jquery');
-const path = require('path');
-const webpack = require("webpack");
+const path = require('path')
+const webpack = require('webpack')
 
 // plugins
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: [
@@ -16,6 +15,12 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        options: {}
+      },
       {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
@@ -35,8 +40,8 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('styles.css'),
     new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
+      $: 'jquery',
+      jQuery: 'jquery'
     })
   ]
-};
+}
