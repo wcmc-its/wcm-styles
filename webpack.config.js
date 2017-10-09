@@ -1,9 +1,9 @@
 const path = require('path')
-const StyleLintPlugin = require('stylelint-webpack-plugin')
 const webpack = require('webpack')
 
-// plugins
+// Plugins
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const StyleLintPlugin = require('stylelint-webpack-plugin')
 
 module.exports = {
   entry: [
