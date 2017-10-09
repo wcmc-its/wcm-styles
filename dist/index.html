@@ -1,9 +1,21 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset='UTF-8'>
     <link rel="stylesheet" href="styles.css">
     <title>WCM Styles</title>
+
+    <style media="screen">
+      body {
+        position: relative;
+      }
+
+      section {
+        padding-top: 55px;
+      }
+    </style>
   </head>
-  <body>
+  <body data-offset="55" data-target="#navbar-collapse-right" data-spy="scroll">
     <header>
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -21,21 +33,19 @@
           <nav class="collapse navbar-collapse" id="navbar-collapse-right" role="navigation">
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <a href="#">Nav Link</a>
-              </li>
-              <li class="active">
-                <a href="#">Active Nav Link</a>
+                <a href="#headings">Headings</a>
               </li>
               <li>
-                <a target="_blank" href="#">
-                  <i class="fa fa-question-circle"></i>
-                </a>
+                <a href="#tabs">Tabs</a>
               </li>
               <li>
-                <a href="/services/auth/new">
-                  <i class="fa fa-sign-in"></i>
-                  Login link
-                </a>
+                <a href="#forms">Forms</a>
+              </li>
+              <li>
+                <a href="#tables">Tables</a>
+              </li>
+              <li>
+                <a href="#pagination">Pagination</a>
               </li>
             </ul>
           </nav>
@@ -50,18 +60,21 @@
         </div>
       </div>
 
-      <div class="row panel panel-default" id="headings">
-        <div class="panel-heading">Headings</div>
-        <div class="panel-body">
-          <h1>Heading level 1 </h1>
-          <h2>Heading level 2 </h2>
-          <h3>Heading level 3 </h3>
-          <h4>Heading level 4 </h4>
-          <h5>Heading level 5 </h5>
+      <section id="headings">
+        <div class="row panel panel-default">
+          <div class="panel-heading">Headings</div>
+          <div class="panel-body">
+            <h1>Heading level 1 </h1>
+            <h2>Heading level 2 </h2>
+            <h3>Heading level 3 </h3>
+            <h4>Heading level 4 </h4>
+            <h5>Heading level 5 </h5>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="row panel panel-default" id="tabs">
+      <section id="tabs">
+        <div class="row panel panel-default">
         <div class="panel-heading">Tabs</div>
         <div class="panel-body">
           <ul class="nav nav-tabs" role="tablist">
@@ -81,50 +94,54 @@
           </ul>
         </div>
       </div>
+      </section>
 
-      <div class="row panel panel-default" id="forms">
-        <div class="panel-heading">Forms</div>
-        <div class="panel-body">
-          <form>
-            <div class="input-group search form-group">
-              <input name="q" id="q" class="form-control" placeholder="Inline placeholder"
-                     required="required"
-                     type="search">
-              <div class="input-group-btn">
-                <button class="btn btn-default" type="submit">
-                  <i class="fa fa-search"></i>
-                  <span class="hidden-xs">Inline Button</span>
-                </button>
+      <section id="forms">
+        <div class="row panel panel-default">
+          <div class="panel-heading">Forms</div>
+          <div class="panel-body">
+            <form>
+              <div class="input-group search form-group">
+                <input name="q" id="q" class="form-control" placeholder="Inline placeholder"
+                required="required"
+                type="search">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <i class="fa fa-search"></i>
+                    <span class="hidden-xs">Inline Button</span>
+                  </button>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
 
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputFile">File input</label>
-              <input type="file" id="exampleInputFile">
-              <p class="help-block">Example block-level help text here.</p>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"> Check me out
-              </label>
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-            <button type="submit" class="btn btn-wcm-submit">WCM Submit</button>
-          </form>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Example block-level help text here.</p>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+              <button type="submit" class="btn btn-wcm-submit">WCM Submit</button>
+            </form>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="row panel panel-default" id="tables">
+      <section id="tables">
+        <div class="row panel panel-default">
         <div class="panel-heading">Striped Tables</div>
         <div class="panel-body">
           <table class="table table-striped">
@@ -159,8 +176,10 @@
           </table>
         </div>
       </div>
+      </section>
 
-      <div class="row panel panel-default" id="pagination">
+      <section id="pagination">
+        <div class="row panel panel-default">
         <div class="panel-heading">Pagination</div>
         <div class="panel-body">
           <nav aria-label="Page navigation">
@@ -184,6 +203,7 @@
           </nav>
         </div>
       </div>
+      </section>
     </div><!-- main container -->
 
     <footer>
