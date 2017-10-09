@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack && copyfiles -u 1 dist/*.{css,js} docs",
+    "build": "webpack && copyfiles -u 1 dist/*.css docs/css && copyfiles -u 1 dist/*.js docs/js",
     "serve": "http-server dist -p 8080",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch"
