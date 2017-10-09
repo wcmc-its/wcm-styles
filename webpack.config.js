@@ -15,7 +15,7 @@ module.exports = {
     './src/style.scss'
   ],
   output: {
-    filename: 'bundle.js',
+    filename: 'wcm.js',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
@@ -43,7 +43,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('styles.css'),
+    new ExtractTextPlugin('wcm.css'),
     new StyleLintPlugin(),
     new webpack.BannerPlugin(banner),
     new webpack.ProvidePlugin({

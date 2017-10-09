@@ -3,8 +3,8 @@
 These styles are built using [Webpack](https://webpack.js.org/). The ready to use styles are
 found in the `dist` folder along with a sample `index.html` file as a demo.
 
-The `dist/styles.css` stylesheet includes [Bootstrap v3.3](http://getbootstrap.com/docs/3.3/)
-(without Glyphicons) and `bundle.js` includes jQuery v3 along with the base Bootstrap libraries.
+The `wcm.css` stylesheet includes [Bootstrap v3.3](http://getbootstrap.com/docs/3.3/)
+(without Glyphicons) and `wcm.js` includes jQuery v3 along with the base Bootstrap libraries.
 
 ## Building
 
