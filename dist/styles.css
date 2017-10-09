@@ -1,33 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);@charset "UTF-8";
-@font-face {
-  font-family: '1898 Sans Bold';
-  src: local("1898Sans-Bold"); }
-
-a,
-body,
-button {
-  font-family: 'Open Sans', Arial, sans-serif; }
-  a h1,
-  a h2,
-  body h1,
-  body h2,
-  button h1,
-  button h2 {
-    font-family: '1898 Sans Bold', sans-serif; }
-
-h1 {
-  color: #555;
-  font-size: 2em;
-  font-weight: normal; }
-
-h2 {
-  border-bottom: 2px solid #ddd;
-  color: #b31b1b;
-  font-size: 1.5em;
-  font-weight: 300;
-  margin-bottom: 15px;
-  padding-bottom: 5px; }
-
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -1525,7 +1496,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #777; }
+  color: #555555; }
 
 .form-control {
   display: block;
@@ -1534,7 +1505,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #777;
+  color: #555555;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -2694,7 +2665,7 @@ tbody.collapse.in {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #777;
+  color: #555555;
   text-align: center;
   background-color: #eeeeee;
   border: 1px solid #ccc;
@@ -2809,7 +2780,7 @@ tbody.collapse.in {
       .nav-tabs > li > a:hover {
         border-color: #eeeeee #eeeeee #ddd; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-      color: #777;
+      color: #555555;
       background-color: #fff;
       border: 1px solid #ddd;
       border-bottom-color: transparent;
@@ -5040,6 +5011,44 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+@font-face {
+  font-family: '1898 Sans Bold';
+  src: local("1898Sans-Bold"); }
+
+a,
+body,
+button {
+  font-family: 'Open Sans', Arial, sans-serif; }
+  a h1,
+  a h2,
+  body h1,
+  body h2,
+  button h1,
+  button h2 {
+    font-family: '1898 Sans Bold', sans-serif; }
+
+h1 {
+  color: #555555;
+  font-size: 2em;
+  font-weight: normal; }
+
+h2 {
+  border-bottom: 2px solid #ddd;
+  color: #b31b1b;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 15px;
+  padding-bottom: 5px; }
+
+.btn.btn-wcm-submit {
+  background-color: #e87722;
+  border: 0;
+  color: #fff; }
+  .btn.btn-wcm-submit:hover {
+    background-color: #da6a17; }
+  .btn.btn-wcm-submit.active, .btn.btn-wcm-submit:active {
+    background-color: #c35f14; }
+
 body {
   padding-top: 55px; }
 
@@ -5076,10 +5085,25 @@ body {
   padding-bottom: 80px; }
 
 .navbar-fixed-bottom {
-  background-color: #222;
+  background-color: #222222;
   border-top: 0;
   color: #fff;
   min-height: 40px; }
   .navbar-fixed-bottom p {
     font-size: 0.8em;
     padding: 10px 0 0; }
+
+.nav-tabs {
+  font-size: 0.9em;
+  font-weight: 700;
+  margin-top: 3rem; }
+  .nav-tabs a:link,
+  .nav-tabs a:visited,
+  .nav-tabs a:hover {
+    color: #777777; }
+  .nav-tabs li.active a,
+  .nav-tabs li.active a:focus,
+  .nav-tabs li.active a:hover {
+    border-radius: 0;
+    border-top: 3px solid #ffc72c;
+    padding-top: 8px; }
