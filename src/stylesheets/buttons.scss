@@ -1,0 +1,14 @@
+.btn.btn-wcm-submit {
+  background-color: $orange-bright;
+  border: 0;
+  color: $white;
+
+  &:hover {
+    background-color: darken($orange-bright, 5%);
+  }
+
+  &.active,
+  &:active {
+    background-color: darken($orange-bright, 10%);
+  }
+}

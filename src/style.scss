@@ -1,10 +1,14 @@
-// WCM fonts and variables
+// WCM variables
 @import 'stylesheets/colors';
-@import 'stylesheets/fonts';
 
 // Bootstrap
 @import 'stylesheets/bootstrap';
 
+// WCM fonts
+@import 'stylesheets/fonts';
+
 // WCM custom styles
+@import 'stylesheets/buttons';
 @import 'stylesheets/header';
 @import 'stylesheets/footer';
+@import 'stylesheets/navtabs';

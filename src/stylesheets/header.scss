@@ -3,7 +3,7 @@ body {
 }
 
 .navbar.navbar-default.navbar-fixed-top {
-  background-color: $dark-orange;
+  background-color: $orange-dark;
 
   .navbar-brand {
     padding: 10px 0 0 16px;
@@ -43,7 +43,7 @@ body {
       a,
       a:hover {
         background-color: $white;
-        color: $dark-orange;
+        color: $orange-dark;
       }
     }
 
@@ -51,7 +51,7 @@ body {
       background-color: $white;
 
       a {
-        color: $dark-orange;
+        color: $orange-dark;
       }
     }
   }

@@ -1,0 +1,21 @@
+.nav-tabs {
+  font-size: 0.9em;
+  font-weight: 700;
+  margin-top: 3rem;
+
+  a:link,
+  a:visited,
+  a:hover {
+    color: $gray-light;
+  }
+
+  li.active {
+    a,
+    a:focus,
+    a:hover {
+      border-radius: 0;
+      border-top: 3px solid $orange-yellow;
+      padding-top: 8px;
+    }
+  }
+}
