@@ -1,0 +1,58 @@
+body {
+  padding-top: 55px;
+}
+
+.navbar.navbar-default.navbar-fixed-top {
+  background-color: $dark-orange;
+
+  .navbar-brand {
+    padding: 10px 0 0 16px;
+
+    img {
+      width: 300px;
+    }
+
+    @media(max-width: 400px) {
+      padding: 12px 0 0 12px;
+
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    .icon-bar {
+      background-color: $white;
+    }
+  }
+
+  .dropdown-toggle {
+    background-color: Transparent;
+    border: 0;
+    color: $white;
+    margin-top: 15px;
+  }
+
+  ul {
+    a {
+      color: $white;
+    }
+
+    .active {
+      a,
+      a:hover {
+        background-color: $white;
+        color: $dark-orange;
+      }
+    }
+
+    &.dropdown-menu {
+      background-color: $white;
+
+      a {
+        color: $dark-orange;
+      }
+    }
+  }
+}

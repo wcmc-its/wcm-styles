@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>WCM Styles</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://weill.cornell.edu/">
+              <img title="WCM Logo" src="wcm-logo-1line-white.png" alt="Wcm logo 1line white">
+            </a>
+          </div>
+          <nav class="collapse navbar-collapse" id="navbar-collapse-right" role="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#">People</a>
+              </li>
+              <li class="active">
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a target="_blank" href="#">
+                  <i class="fa fa-question-circle"></i>
+                </a>
+              </li>
+              <li>
+                <a href="/services/auth/new"><i class="fa fa-sign-in"></i>
+                  Login to edit profile
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>WCM Styles</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active" role="presentation">
+              <a aria-controls="search-tab" data-target="#search-tab" data-toggle="tab" href="#" role="tab" aria-expanded="true">
+                Search
+              </a>
+            </li>
+
+            <li role="presentation" class="">
+              <a aria-controls="browse-tab" data-target="#browse-tab" data-toggle="tab" href="#" role="tab" aria-expanded="false">
+                Browse
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="search-tab" role="tabpanel">
+          <div class="row">
+            <div class="col-lg-12 search-index">
+              <form id="search-form" action="#" accept-charset="UTF-8" data-remote="true" method="get">
+                <div class="input-group search form-group">
+                  <input name="q" id="q" class="form-control" placeholder="Search by name, alias, or location" pattern="^(\w|\s|[%&amp;(),\-:'./])+$" title="Only letters, numbers, and % &amp; ( ) , - : ' . / allowed" required="required" autofocus="autofocus" data-_extension-text-contrast="" type="search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" data-disable-with="Loading..." type="submit" data-_extension-text-contrast="">
+                      <i class="fa fa-search"></i>
+                      <span class="hidden-xs">Search</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="search-results"><div class="row">
+        <div class="col-lg-12">
+          <h2> 5 Services Found </h2>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="container">
+          <p class="text-sc">
+            ©
+            2017
+            Weill Cornell Medicine. Reproduction, electronic or otherwise, without the permission of
+            Weill Cornell Medicine is strictly forbidden. All Rights Reserved.
+            <span class="pull-right">
+              Version
+              0.0.0
+            </span>
+            <span class="hidden">
+              For debug only - release: public, host: xits-appst01.med.cornell.edu
+            </span>
+          </p>
+        </div>
+      </nav>
+    </footer>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>

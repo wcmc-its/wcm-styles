@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+  font-family: '1898 Sans Bold';
+  src: local('1898Sans-Bold');
+}
+
+a,
+body,
+button {
+  font-family: 'Open Sans', Arial, sans-serif;
+
+  h1,
+  h2 {
+    font-family: '1898 Sans Bold', sans-serif;
+  }
+}
+
+
+h1 {
+  color: $lighter-gray;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+h2 {
+  border-bottom: 2px solid $darkest-gray;
+  color: $red;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}

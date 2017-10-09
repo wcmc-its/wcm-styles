@@ -1,0 +1,15 @@
+body {
+  padding-bottom: 80px;
+}
+
+.navbar-fixed-bottom {
+  background-color: $dark-gray;
+  border-top: 0;
+  color: $white;
+  min-height: 40px;
+
+  p {
+    font-size: .8em;
+    padding: 10px 0 0;
+  }
+}
