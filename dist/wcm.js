@@ -1,3 +1,7 @@
+/*!
+ * wcm-styles
+ * v0.1.0
+ */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
