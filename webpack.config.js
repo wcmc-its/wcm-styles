@@ -1,3 +1,4 @@
+const $ = require('jquery');
 const path = require('path');
 const webpack = require("webpack");
 
@@ -21,6 +22,13 @@ module.exports = {
           fallback: 'style-loader',
           use: ['css-loader', 'sass-loader']
         })
+      },
+      {
+        test: require.resolve('jquery'),
+        use: [{
+          loader: 'expose-loader',
+          options: '$'
+        }]
       }
     ]
   },
