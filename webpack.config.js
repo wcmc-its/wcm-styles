@@ -1,9 +1,13 @@
+const projectInfo = require('./package.json')
 const path = require('path')
 const webpack = require('webpack')
 
 // Plugins
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
+
+// Top comment added to output files
+const banner = projectInfo.name + "\nv" + projectInfo.version
 
 module.exports = {
   entry: [
@@ -41,6 +45,7 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('styles.css'),
     new StyleLintPlugin(),
+    new webpack.BannerPlugin(banner),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
