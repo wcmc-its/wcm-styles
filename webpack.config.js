@@ -1,4 +1,5 @@
 const path = require('path')
+const StyleLintPlugin = require('stylelint-webpack-plugin')
 const webpack = require('webpack')
 
 // plugins
@@ -39,6 +40,7 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('styles.css'),
+    new StyleLintPlugin(),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
