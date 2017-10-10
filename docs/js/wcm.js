@@ -1,1 +1,1 @@
-/home/kem2028/code/wcm-styles/dist/wcm.js
+../../dist/wcm.js
