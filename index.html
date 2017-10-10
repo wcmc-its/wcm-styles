@@ -228,7 +228,7 @@
 
       document.getElementById('year').innerHTML = date.getFullYear()
 
-      $.get('/package.json', function (res) {
+      $.get('package.json', function (res) {
         $('#version').text(res.version)
       })
     </script>
