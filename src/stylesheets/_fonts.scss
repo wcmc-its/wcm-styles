@@ -5,15 +5,9 @@
   src: local('1898Sans-Bold');
 }
 
-a,
-body,
-button {
-  font-family: 'Open Sans', Arial, sans-serif;
-
-  h1,
-  h2 {
-    font-family: '1898 Sans Bold', sans-serif;
-  }
+h1,
+h2 {
+  font-family: '1898 Sans Bold', sans-serif;
 }
 
 h1 {
@@ -23,7 +17,7 @@ h1 {
 }
 
 h2 {
-  border-bottom: 2px solid $gray-darkest;
+  border-bottom: 2px solid $gray-lighter;
   color: $red-cornell;
   font-size: 1.5em;
   font-weight: 300;

@@ -1,10 +1,11 @@
 // WCM variables
-@import 'stylesheets/colors';
+// Some of these override those in bootstrap and so must be loaded first
+@import 'stylesheets/variables';
 
 // Bootstrap
 @import 'stylesheets/bootstrap';
 
-// WCM fonts
+// WCM Fonts
 @import 'stylesheets/fonts';
 
 // WCM custom styles
