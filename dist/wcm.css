@@ -5077,18 +5077,6 @@ body {
     .navbar.navbar-default.navbar-fixed-top ul.dropdown-menu a {
       color: #cf4520; }
 
-body {
-  padding-bottom: 80px; }
-
-.navbar-fixed-bottom {
-  background-color: #222222;
-  border-top: 0;
-  color: #fff;
-  min-height: 40px; }
-  .navbar-fixed-bottom p {
-    font-size: 0.8em;
-    padding: 10px 0 0; }
-
 .nav-tabs {
   font-size: 0.9em;
   font-weight: 700;
