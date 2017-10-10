@@ -210,16 +210,12 @@
       <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
         <div class="container">
           <p class="text-sc">
-            ©
-            2017
+            © <span id="year"></span>
             Weill Cornell Medicine. Reproduction, electronic or otherwise, without the permission of
             Weill Cornell Medicine is strictly forbidden. All Rights Reserved.
             <span class="pull-right">
               Version
-              0.0.0
-            </span>
-            <span class="hidden">
-              For debug only - release: public, host: 127.0.0.1
+              <span id="version"></span>
             </span>
           </p>
         </div>
@@ -227,5 +223,14 @@
     </footer>
 
     <script src="dist/wcm.js"></script>
+    <script>
+      var date = new Date()
+
+      document.getElementById('year').innerHTML = date.getFullYear()
+
+      $.get('/package.json', function (res) {
+        $('#version').text(res.version)
+      })
+    </script>
   </body>
 </html>
