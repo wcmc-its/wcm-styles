@@ -1,7 +1,8 @@
 {
   "name": "wcm-styles",
   "version": "0.1.0",
-  "description": "",
+  "description": "Styles for Weill Cornell Medicine",
+  "homepage": "https://github.com/wcmc-its/wcm-styles",
   "main": "index.js",
   "scripts": {
     "build": "webpack && copyfiles -u 1 dist/*.css docs/css && copyfiles -u 1 dist/*.js docs/js",
@@ -10,7 +11,7 @@
     "watch": "webpack --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kevin McCormack",
   "license": "ISC",
   "devDependencies": {
     "copyfiles": "^1.2.0",
