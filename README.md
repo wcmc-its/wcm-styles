@@ -1,8 +1,10 @@
 # WCM Styles
 
+The styles here are based on the [Weill Cornell Medicine Brand Guidelines](https://brand.weill.cornell.edu/).
+
 These styles are built using [Webpack](https://webpack.js.org/). The ready to use styles are
 found in the `dist` folder along with a sample `index.html` file as a demo. The demo is also
-available through [this project's GitHub pages page](https://wcmc-its.github.io/wcm-styles/). 
+available through [this project's GitHub pages page](https://wcmc-its.github.io/wcm-styles/).
 
 The `wcm.css` stylesheet includes [Bootstrap v3.3](http://getbootstrap.com/docs/3.3/)
 (without Glyphicons) and `wcm.js` includes jQuery v3 along with the base Bootstrap libraries.
