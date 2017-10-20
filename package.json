@@ -5,7 +5,7 @@
   "homepage": "https://github.com/wcmc-its/wcm-styles",
   "main": "index.js",
   "scripts": {
-    "build": "webpack && copyfiles -u 1 dist/*.css docs/css && copyfiles -u 1 dist/*.js docs/js",
+    "build": "webpack",
     "serve": "http-server -p 8080",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch"
