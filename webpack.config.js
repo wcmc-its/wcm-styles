@@ -7,7 +7,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 
 // Top comment added to output files
-const banner = projectInfo.name + "\nv" + projectInfo.version
+const banner = projectInfo.name + '\nv' + projectInfo.version
 
 module.exports = {
   entry: [
