@@ -5016,12 +5016,16 @@ button.close {
     display: none !important; } }
 
 @font-face {
-  font-family: '1898 Sans Bold';
-  src: local("1898Sans-Bold"); }
+  font-family: '1898Sans';
+  src: url("1898Sans-Regular.otf") format("otf"), url("1898Sans-Regular.woff") format("woff"), url("1898Sans-Regular.ttf") format("truetype"), url("1898Sans-Regular.svg") format("svg"), local("1898Sans-Regular"); }
+
+@font-face {
+  font-family: '1898Sans-Bold';
+  src: url("1898Sans-Bold.otf") format("otf"), url("1898Sans-Bold.woff") format("woff"), url("1898Sans-Bold.ttf") format("truetype"), url("1898Sans-Bold.svg") format("svg"), local("1898Sans-Bold"); }
 
 h1,
 h2 {
-  font-family: '1898 Sans Bold', sans-serif; }
+  font-family: '1898Sans-Bold', sans-serif; }
 
 h1 {
   color: #555555;
