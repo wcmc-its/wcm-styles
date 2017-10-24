@@ -39,6 +39,15 @@ module.exports = {
           loader: 'expose-loader',
           options: '$'
         }]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: { name: '[name].[ext]'}
+          }
+        ]
       }
     ]
   },
