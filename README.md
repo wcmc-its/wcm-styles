@@ -7,7 +7,9 @@ found in the `dist` folder along with a sample `index.html` file as a demo. The 
 available through [this project's GitHub pages page](https://wcmc-its.github.io/wcm-styles/).
 
 The `wcm.css` stylesheet includes [Bootstrap v3.3](http://getbootstrap.com/docs/3.3/)
-(without Glyphicons) and `wcm.js` includes jQuery v3 along with the base Bootstrap libraries.
+(without Glyphicons) and [Font Awesome v4.7](http://fontawesome.io)
+
+`wcm.js` includes [jQuery v3](https://jquery.com/) along with the base Bootstrap libraries.
 
 ## Building
 
