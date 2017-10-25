@@ -62,14 +62,21 @@
                 <a href="#forms">Forms</a>
               </li>
               <li>
+                <a href="#font-awesome">Font Awesome</a>
+              </li>
+              <li>
                 <a href="#tables">Tables</a>
+              </li>
+              <li>
+                <a href="#backgrounds">Backgrounds</a>
+              </li>
+              <li>
+                <a href="#text">Text</a>
               </li>
               <li>
                 <a href="#pagination">Pagination</a>
               </li>
-
             </ul>
-
           </nav>
         </div>
       </nav>
@@ -155,9 +162,39 @@
                   <input type="checkbox"> Check me out
                 </label>
               </div>
+              <div class="form-group">
+                <a href="javascript:void(0)"
+                   class="btn"
+                   data-content="<code>$(&quot;[data-toggle='popover']&quot;).popover()</code>"
+                   data-html="true"
+                   data-title="Must be enabled with JavaScript"
+                   data-toggle="popover">
+                  <i class="fa fa-info-circle"></i>
+                </a>
+                Information Popover
+              </div>
               <button type="submit" class="btn btn-default">Submit</button>
               <button type="submit" class="btn btn-wcm-submit">WCM Submit</button>
             </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="font-awesome">
+        <div class="row panel panel-default">
+          <div class="panel-heading"><a href="http://fontawesome.io">Font Awesome</a></div>
+          <div class="panel-body">
+            <table class="table text-center">
+              <tbody>
+                <td><i class="fa fa-calendar"></i></td>
+                <td><i class="fa fa-info"></i></td>
+                <td><i class="fa fa-question-circle"></i></td>
+                <td><i class="fa fa-sign-in"></i></td>
+                <td><i class="fa fa-sign-out"></i></td>
+                <td><i class="fa fa-university"></i></td>
+                <td><i class="fa fa-users"></i></td>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
@@ -200,6 +237,19 @@
       </div>
       </section>
 
+      <section id="backgrounds">
+        <div class="row panel panel-default">
+          <div class="panel-heading">Backgrounds</div>
+          <div class="panel-body">
+            <p class="bg-primary">bg-primary</p>
+            <p class="bg-success">bg-success</p>
+            <p class="bg-info">bg-info</p>
+            <p class="bg-warning">bg-warning</p>
+            <p class="bg-danger">bg-danger</p>
+          </div>
+        </div>
+      </section>
+
       <section id="text">
         <div class="row panel panel-default">
           <div class="panel-heading">Text</div>
@@ -220,18 +270,16 @@
         <div class="panel-body">
           <nav aria-label="Page navigation">
             <ul class="pagination">
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
+              <li class="disabled">
+                <span aria-hidden="true">&laquo;</span>
               </li>
-              <li><a href="#">1</a></li>
+              <li class="active"><span>1</span></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
               <li><a href="#">4</a></li>
               <li><a href="#">5</a></li>
               <li>
-                <a href="#" aria-label="Next">
+                <a href="#" aria-label="Previous">
                   <span aria-hidden="true">&raquo;</span>
                 </a>
               </li>
@@ -270,6 +318,10 @@
 
       $.get('package.json', function (res) {
         $('#version').text(res.version)
+      })
+
+      $(function () {
+        $('[data-toggle="popover"]').popover()
       })
     </script>
   </body>
