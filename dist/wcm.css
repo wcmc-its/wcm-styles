@@ -1,6 +1,6 @@
 /*!
  * wcm-styles
- * v0.2.0
+ * v0.3.0
  */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);@charset "UTF-8";
 /*!
@@ -7405,8 +7405,7 @@ body {
   .navbar.navbar-default.navbar-fixed-top .dropdown-toggle {
     background-color: Transparent;
     border: 0;
-    color: #fff;
-    margin-top: 15px; }
+    color: #fff; }
   .navbar.navbar-default.navbar-fixed-top ul a {
     color: #fff; }
   .navbar.navbar-default.navbar-fixed-top ul .active a,
@@ -7420,8 +7419,7 @@ body {
 
 .nav-tabs {
   font-size: 0.9em;
-  font-weight: 700;
-  margin-top: 3rem; }
+  font-weight: 700; }
   .nav-tabs a:link,
   .nav-tabs a:visited,
   .nav-tabs a:hover {
