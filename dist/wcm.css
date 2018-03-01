@@ -15,7 +15,7 @@
   --purple: #6f42c1;
   --pink: #e83e8c;
   --red: #dc3545;
-  --orange: #fd7e14;
+  --orange: #e57833;
   --yellow: #ffc107;
   --green: #28a745;
   --teal: #20c997;
@@ -8385,14 +8385,15 @@ h2 {
   margin-bottom: 15px;
   padding-bottom: 5px; }
 
-.btn.btn-wcm-submit {
-  background-color: #e87722;
-  border: 0;
-  color: #fff; }
-  .btn.btn-wcm-submit:hover {
-    background-color: #da6a17; }
-  .btn.btn-wcm-submit.active, .btn.btn-wcm-submit:active {
-    background-color: #c35f14; }
+.btn-primary {
+  background-color: #e57833;
+  border-color: #e57833; }
+  .btn-primary:hover {
+    background-color: #e2691d;
+    border-color: #e2691d; }
+  .btn-primary.active, .btn-primary:active {
+    background-color: #cb5f1a;
+    border-color: #cb5f1a; }
 
 a .fa-info,
 a .fa-info-circle {
