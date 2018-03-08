@@ -1,6 +1,6 @@
 /*!
  * wcm-styles
- * v0.3.0
+ * v0.3.2
  */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);@charset "UTF-8";
 /*!
@@ -7392,14 +7392,14 @@ body {
 .navbar.navbar-default.navbar-fixed-top {
   background-color: #cf4520; }
   .navbar.navbar-default.navbar-fixed-top .navbar-brand {
-    padding: 10px 0 0 16px; }
+    align-items: center;
+    display: flex;
+    padding: 0 10px; }
     .navbar.navbar-default.navbar-fixed-top .navbar-brand img {
       width: 300px; }
-    @media (max-width: 400px) {
-      .navbar.navbar-default.navbar-fixed-top .navbar-brand {
-        padding: 12px 0 0 12px; }
-        .navbar.navbar-default.navbar-fixed-top .navbar-brand img {
-          width: 200px; } }
+    @media (max-width: 678px) {
+      .navbar.navbar-default.navbar-fixed-top .navbar-brand img {
+        width: 200px; } }
   .navbar.navbar-default.navbar-fixed-top .navbar-toggle .icon-bar {
     background-color: #fff; }
   .navbar.navbar-default.navbar-fixed-top .dropdown-toggle {
