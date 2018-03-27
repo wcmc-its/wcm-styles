@@ -8,16 +8,11 @@ body {
   .navbar-brand {
     align-items: center;
     display: flex;
+    max-width: 300px;
     padding: 0 10px;
 
-    img {
-      width: 300px;
-    }
-
-    @media (max-width: 678px) {
-      img {
-        width: 200px;
-      }
+    @media (max-width: 768px) {
+      width: 75%;
     }
   }
 
