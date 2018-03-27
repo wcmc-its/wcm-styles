@@ -1,6 +1,6 @@
 /*!
  * wcm-styles
- * v0.3.2
+ * v0.3.3
  */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
