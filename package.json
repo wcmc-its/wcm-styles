@@ -1,6 +1,6 @@
 {
   "name": "wcm-styles",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Styles for Weill Cornell Medicine",
   "homepage": "https://github.com/wcmc-its/wcm-styles",
   "main": "index.js",
