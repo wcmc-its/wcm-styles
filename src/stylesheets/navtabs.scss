@@ -8,13 +8,15 @@
     color: $gray-light;
   }
 
-  li.active {
-    a,
-    a:focus,
-    a:hover {
-      border-radius: 0;
-      border-top: 3px solid $orange-yellow;
-      padding-top: 8px;
-    }
+  a:hover {
+    background-color: $gray-lighter;
+  }
+
+  .active:link,
+  .active:focus,
+  .active:hover {
+    border-radius: 0;
+    border-top: 3px solid $orange-yellow;
+    padding-top: 8px;
   }
 }

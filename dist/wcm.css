@@ -8408,13 +8408,14 @@ body {
 
 .navbar-wcm {
   padding: 0; }
-  .navbar-wcm .navbar-brand img {
-    width: 300px; }
-  @media (max-width: 400px) {
-    .navbar-wcm .navbar-brand {
-      padding: 12px 0 0 12px; }
-      .navbar-wcm .navbar-brand img {
-        width: 200px; } }
+  .navbar-wcm .navbar-brand {
+    align-items: center;
+    display: flex;
+    max-width: 300px;
+    padding: 0 10px; }
+    @media (max-width: 768px) {
+      .navbar-wcm .navbar-brand {
+        width: 75%; } }
   .navbar-wcm .navbar-toggle .icon-bar {
     background-color: #fff; }
   .navbar-wcm .dropdown-toggle {
@@ -8439,9 +8440,11 @@ body {
   .nav-tabs a:visited,
   .nav-tabs a:hover {
     color: #777777; }
-  .nav-tabs li.active a,
-  .nav-tabs li.active a:focus,
-  .nav-tabs li.active a:hover {
+  .nav-tabs a:hover {
+    background-color: #eeeeee; }
+  .nav-tabs .active:link,
+  .nav-tabs .active:focus,
+  .nav-tabs .active:hover {
     border-radius: 0;
     border-top: 3px solid #ffc72c;
     padding-top: 8px; }
