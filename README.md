@@ -6,10 +6,11 @@ These styles are built using [Webpack](https://webpack.js.org/). The ready to us
 found in the `dist` folder along with a sample `index.html` file as a demo. The demo is also
 available through [this project's GitHub pages page](https://wcmc-its.github.io/wcm-styles/).
 
-The `wcm.css` stylesheet includes [Bootstrap v3.3](http://getbootstrap.com/docs/3.3/)
+The `wcm.css` stylesheet includes [Bootstrap v4.0](http://getbootstrap.com/docs/4.0/)
 (without Glyphicons) and [Font Awesome v4.7](http://fontawesome.io)
 
-`wcm.js` includes [jQuery v3](https://jquery.com/) along with the base Bootstrap libraries.
+`wcm.js` includes [jQuery v3](https://jquery.com/) and [Popper.js v1](https://popper.js.org/)
+along with the base Bootstrap libraries.
 
 ## Building
 
@@ -22,7 +23,7 @@ npm run build
 
 ## Developing
 
-Let webpack monitor your changes and rebuild in realtime.
+Let Webpack monitor your changes and rebuild in real time.
 
 ```
 npm run watch

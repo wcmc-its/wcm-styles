@@ -5,13 +5,14 @@ $gray-dark:     lighten($gray-base, 20%);   // #333
 $gray:          lighten($gray-base, 33.5%); // #555
 $gray-light:    lighten($gray-base, 46.7%); // #777
 $gray-lighter:  lighten($gray-base, 93.5%); // #eee
+$orange:        #e57833;
 $orange-bright: #e87722;
 $orange-dark:   #cf4520;
 $orange-yellow: #ffc72c;
 $red-cornell:   #b31b1b;
 $white:         #fff;
 
-$brand-primary: $orange-dark;
+$primary: $orange-dark;
 
 // Fonts
 $font-family-sans-serif:  'Open Sans', Arial, sans-serif;
