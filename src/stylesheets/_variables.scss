@@ -1,4 +1,5 @@
 // Colors
+$blue:          #007bff;
 $gray-base:     #000;
 $gray-darker:   lighten($gray-base, 13.5%); // #222
 $gray-dark:     lighten($gray-base, 20%);   // #333
@@ -13,6 +14,11 @@ $red-cornell:   #b31b1b;
 $white:         #fff;
 
 $primary: $orange-dark;
+$info:    $blue;
 
 // Fonts
 $font-family-sans-serif:  'Open Sans', Arial, sans-serif;
+
+// Nav
+$navbar-dark-color:                 rgba($white, .8) !default;
+$navbar-dark-hover-color:           rgba($white, .9) !default;

@@ -14,7 +14,8 @@
 
   .active:link,
   .active:focus,
-  .active:hover {
+  .active:hover,
+  .active:visited {
     border-radius: 0;
     border-top: 3px solid $orange-yellow;
     padding-top: 8px;
