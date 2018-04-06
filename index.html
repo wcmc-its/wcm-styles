@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset='UTF-8'>
     <meta name="description" content="Styles for Weill Cornell Medicine">
@@ -14,17 +14,8 @@
     <meta property="og:image" content="https://wcmc-its.github.io/wcm-styles/images/WCM_MB_LOGO_HZSS2L_CLR_RGB.png" />
 
     <style media="screen">
-      body {
-        position: relative;
-        padding-bottom: 180px;
-      }
-
       section {
-        padding-top: 55px;
-      }
-
-      .github-link {
-        margin: 9px 15px;
+        padding-top: 4rem;
       }
     </style>
   </head>
@@ -35,20 +26,16 @@
           <a class="navbar-brand" href="http://weill.cornell.edu/">
             <img title="WCM Logo" src="images/wcm-logo-1line-white.png" alt="Wcm logo 1line white">
           </a>
-          <div class="navbar-text github-link">
-            <a href="https://github.com/wcmc-its/wcm-styles">
-              <img src="images/GitHub-Mark-Light-32px.png" alt="GitHub Repo">
-            </a>
-          </div>
-          <!-- <button class="navbar-toggle" data-target="#navbar-collapse" data-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-links" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-
           <div class="collapse navbar-collapse" id="navbar-collapse-links" role="navigation">
+            <div class="navbar-text github-link">
+              <a href="https://github.com/wcmc-its/wcm-styles">
+                <img src="images/GitHub-Mark-Light-32px.png" alt="GitHub Repo">
+              </a>
+            </div>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="#headings">Headings</a>
@@ -82,8 +69,8 @@
 
     <div class="container" id="main">
       <div class="row">
-        <div class="col-sm-12">
-          <h1>WCM Styles</h1>
+        <div class="col">
+          <h1 class="display-4">WCM Styles</h1>
         </div>
       </div>
 
@@ -128,14 +115,15 @@
           <div class="card-header">Forms</div>
           <div class="card-body">
             <form>
+              <label for="q">Input Group</label>
               <div class="input-group search form-group">
                 <input name="q" id="q" class="form-control" placeholder="Inline placeholder"
                 required="required"
                 type="search">
-                <div class="input-group-btn">
-                  <button class="btn btn-default" type="submit">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="submit">
                     <i class="fa fa-search"></i>
-                    <span class="hidden-xs">Inline Button</span>
+                    <span class="hidden-xs">Appended Button</span>
                   </button>
                 </div>
               </div>
@@ -161,27 +149,42 @@
                 </label>
               </div>
               <div class="form-group">
-                <a href="javascript:void(0)"
-                   class="btn"
+                <span
+                   class="btn text-info"
                    data-content="<code>$(&quot;[data-toggle='popover']&quot;).popover()</code>"
                    data-html="true"
                    data-title="Must be enabled with JavaScript"
                    data-toggle="popover">
                   <i class="fa fa-info-circle"></i>
-                </a>
+                </span>
                 Information Popover
               </div>
-              <button type="submit" class="btn btn-default">Submit</button>
+              <button type="submit" class="btn btn-outline-dark">Submit</button>
             </form>
             <hr>
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-secondary">Secondary</button>
-            <button type="button" class="btn btn-success">Success</button>
-            <button type="button" class="btn btn-danger">Danger</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-light">Light</button>
-            <button type="button" class="btn btn-dark">Dark</button>
+            <h5>Buttons</h5>
+            <div class="my-2 row">
+              <button type="button" class="btn btn-primary mx-1">Primary</button>
+              <button type="button" class="btn btn-secondary mx-1">Secondary</button>
+              <button type="button" class="btn btn-success mx-1">Success</button>
+              <button type="button" class="btn btn-danger mx-1">Danger</button>
+              <button type="button" class="btn btn-warning mx-1">Warning</button>
+              <button type="button" class="btn btn-info mx-1">Info</button>
+              <button type="button" class="btn btn-light mx-1">Light</button>
+              <button type="button" class="btn btn-dark mx-1">Dark</button>
+              <button type="button" class="btn btn-link mx-1">Link</button>
+            </div>
+            <h5>Outline Buttons</h5>
+            <div class="my-2 row">
+              <button type="button" class="btn btn-outline-primary mx-1">Primary</button>
+              <button type="button" class="btn btn-outline-secondary mx-1">Secondary</button>
+              <button type="button" class="btn btn-outline-success mx-1">Success</button>
+              <button type="button" class="btn btn-outline-danger mx-1">Danger</button>
+              <button type="button" class="btn btn-outline-warning mx-1">Warning</button>
+              <button type="button" class="btn btn-outline-info mx-1">Info</button>
+              <button type="button" class="btn btn-outline-light mx-1">Light</button>
+              <button type="button" class="btn btn-outline-dark mx-1">Dark</button>
+            </div>
           </div>
         </div>
       </section>
@@ -310,8 +313,8 @@
       </section>
     </div><!-- main container -->
 
-    <footer>
-      <nav class="bg-dark fixed-bottom navbar-dark " role="navigation">
+    <footer class="mt-4">
+      <nav class="bg-dark navbar-dark " role="navigation">
         <div class="container">
           <div class="navbar-text">
             <small>
