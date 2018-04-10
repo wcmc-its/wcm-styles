@@ -60,7 +60,8 @@ module.exports = {
     new webpack.BannerPlugin(banner),
     new webpack.ProvidePlugin({
       $: 'jquery',
-      jQuery: 'jquery'
+      jQuery: 'jquery',
+      Popper: ['popper.js', 'default']
     })
   ]
 }
