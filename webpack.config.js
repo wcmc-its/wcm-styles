@@ -44,6 +44,13 @@ module.exports = {
         }]
       },
       {
+        test: require.resolve('inputmask'),
+        use: [{
+          loader: 'expose-loader',
+          options: 'Inputmask'
+        }]
+      },
+      {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
         use: [
           {
@@ -60,6 +67,8 @@ module.exports = {
     new webpack.BannerPlugin(banner),
     new webpack.ProvidePlugin({
       $: 'jquery',
+      Inputmask: 'inputmask',
+      'window.Inputmask': 'inputmask',
       jQuery: 'jquery',
       Popper: ['popper.js', 'default']
     })

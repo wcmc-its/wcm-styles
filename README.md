@@ -10,7 +10,7 @@ The `wcm.css` stylesheet includes [Bootstrap v4](http://getbootstrap.com/docs/4.
 (without Glyphicons) and [Font Awesome v4.7](http://fontawesome.io). For Bootstrap v3 see the [v0.3.x branch](../../tree/v0.3.x).
 
 `wcm.js` includes [jQuery v3](https://jquery.com/) and [Popper.js v1](https://popper.js.org/)
-along with the base Bootstrap libraries.
+along with the base Bootstrap libraries. It also includes [Inputmask](https://github.com/RobinHerbots/Inputmask)
 
 ## Building
 
