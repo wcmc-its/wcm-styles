@@ -1,1 +1,1 @@
-import './javascripts/bootstrap.min.js'
+import 'bootstrap'

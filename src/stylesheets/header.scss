@@ -3,50 +3,18 @@ body {
 }
 
 .navbar-wcm {
-  padding: 0;
-
   .navbar-brand {
     align-items: center;
     display: flex;
     max-width: 300px;
     padding: 0 10px;
 
+    img {
+      width: 100%;
+    }
+
     @media (max-width: 768px) {
-      width: 75%;
-    }
-  }
-
-  .navbar-toggle {
-    .icon-bar {
-      background-color: $white;
-    }
-  }
-
-  .dropdown-toggle {
-    background-color: Transparent;
-    border: 0;
-    color: $white;
-  }
-
-  ul {
-    a {
-      color: $white;
-    }
-
-    .active {
-      a,
-      a:hover {
-        background-color: $white;
-        color: $orange-dark;
-      }
-    }
-
-    &.dropdown-menu {
-      background-color: $white;
-
-      a {
-        color: $orange-dark;
-      }
+      width: 70%;
     }
   }
 }
