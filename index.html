@@ -206,13 +206,16 @@
                 <li><a class="dropdown-item" href="#">Item 2</a></li>
               </ul>
             </span>
+            <hr>
+            <h5><a class="text-dark" href="https://github.com/RobinHerbots/Inputmask" target="_blank">Inputmask <i class="fa fa-external-link"></i></a></h5>
+            <input data-inputmask="'alias': 'phone'" type="tel" name="phone" value="" class="form-control" placeholder="Masked phone number">
           </div>
         </div>
       </section>
 
       <section id="font-awesome">
         <div class="row card">
-          <div class="card-header"><a href="http://fontawesome.io">Font Awesome</a></div>
+          <div class="card-header"><a class="text-dark" href="http://fontawesome.io" target="_blank">Font Awesome <i class="fa fa-external-link"></i></a></div>
           <div class="card-body">
             <table class="table text-center">
               <tbody>
@@ -367,6 +370,8 @@
       $(function () {
         $('[data-toggle="popover"]').popover()
       })
+
+      Inputmask().mask(document.querySelectorAll('input'))
     </script>
   </body>
 </html>
