@@ -1,10 +1,9 @@
-const devMode = process.env.NODE_ENV !== 'production'
-const path = require('path')
 const projectInfo = require('./package.json')
+const path = require('path')
 const webpack = require('webpack')
 
 // Plugins
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 
 // Top comment added to output files
@@ -28,12 +27,11 @@ module.exports = {
         options: {}
       },
       {
-        test: /\.s?[ac]ss$/,
-        use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader',
-        ],
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader']
+        })
       },
       {
         test: require.resolve('jquery'),
@@ -57,19 +55,14 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            options: { name: '[name].[ext]', publicPath: 'dist' }
+            options: { name: '[name].[ext]'}
           }
         ]
       }
     ]
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // both options are optional
-      filename: "[name].css",
-      chunkFilename: "[id].css"
-    }),
+    new ExtractTextPlugin('wcm.css'),
     new StyleLintPlugin(),
     new webpack.BannerPlugin(banner),
     new webpack.ProvidePlugin({
