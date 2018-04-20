@@ -71,6 +71,9 @@ module.exports = {
       'window.Inputmask': 'inputmask',
       jQuery: 'jquery',
       Popper: ['popper.js', 'default']
+    }),
+    new webpack.SourceMapDevToolPlugin({
+      exclude: ['popper.js']
     })
   ]
 }
