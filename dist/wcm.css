@@ -1,6 +1,6 @@
 /*!
  * wcm-styles
- * v0.4.4
+ * v0.4.5
  */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);@charset "UTF-8";
 /*!
@@ -8637,7 +8637,7 @@ h2 {
     border-color: #cb5f1a; }
 
 body {
-  padding-top: 80px; }
+  padding-top: 56px; }
 
 .navbar-wcm .navbar-brand {
   align-items: center;
@@ -8666,3 +8666,5 @@ body {
     border-radius: 0;
     border-top: 3px solid #ffc72c;
     padding-top: 8px; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ3Y20uY3NzIiwic291cmNlUm9vdCI6IiJ9*/
