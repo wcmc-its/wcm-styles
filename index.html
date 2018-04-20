@@ -67,7 +67,7 @@
       </nav>
     </header>
 
-    <div class="container" id="main">
+    <div class="container mt-4" id="main">
       <div class="row">
         <div class="col">
           <h1 class="display-4">WCM Styles</h1>
@@ -91,21 +91,40 @@
         <div class="row card">
         <div class="card-header">Tabs</div>
         <div class="card-body">
-          <ul class="nav nav-tabs" role="tablist">
+          <ul class="mb-4 nav nav-tabs" role="tablist">
             <li class="nav-item" role="presentation">
-              <a aria-controls="search-tab" class="active nav-link" data-target="#search-tab"
+              <a aria-controls="search-tab" class="active nav-link" data-target="#tab1-content"
                  data-toggle="tab" href="#" role="tab" aria-expanded="true">
                 Tab 1
               </a>
             </li>
-
             <li class="nav-item" role="presentation">
-              <a aria-controls="browse-tab" class="nav-link" data-target="#browse-tab"
+              <a aria-controls="browse-tab" class="nav-link" data-target="#tab2-content"
                  data-toggle="tab" href="#" role="tab" aria-expanded="false">
                 Tab 2
               </a>
             </li>
+            <li class="nav-item" role="presentation">
+              <a aria-controls="browse-tab" class="nav-link" data-target="#tab3-content"
+                 data-toggle="tab" href="#" role="tab" aria-expanded="false">
+                Tab 3
+              </a>
+            </li>
           </ul>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="tab1-content" role="tabpanel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="tab-pane fade" id="tab2-content" role="tabpanel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="tab-pane fade" id="tab3-content" role="tabpanel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
         </div>
       </div>
       </section>
