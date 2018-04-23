@@ -17,4 +17,10 @@ body {
       width: 70%;
     }
   }
+
+  .nav-item {
+    .active.nav-link {
+      border-bottom: 2px solid $white;
+    }
+  }
 }
