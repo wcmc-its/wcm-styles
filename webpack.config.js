@@ -5,6 +5,7 @@ const webpack = require('webpack')
 // Plugins
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 // Top comment added to output files
 const banner = projectInfo.name + '\nv' + projectInfo.version
@@ -30,7 +31,10 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader']
+          use: [
+            { loader: 'css-loader', options: { minimize: true } },
+            'sass-loader'
+          ]
         })
       },
       {
@@ -74,6 +78,7 @@ module.exports = {
     }),
     new webpack.SourceMapDevToolPlugin({
       exclude: ['popper.js']
-    })
+    }),
+    new UglifyJsPlugin()
   ]
 }
