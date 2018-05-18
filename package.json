@@ -40,6 +40,7 @@
     "font-awesome": "^4.7.0",
     "inputmask": "^3.3.11",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.3"
+    "popper.js": "^1.14.3",
+    "webpack-polyfills-plugin": "^0.2.0"
   }
 }

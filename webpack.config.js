@@ -4,6 +4,7 @@ const webpack = require('webpack')
 
 // Plugins
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const PolyfillsPlugin = require('webpack-polyfills-plugin')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
@@ -67,6 +68,9 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('wcm.css'),
+    new PolyfillsPlugin([
+      'Array/prototype/includes' // For IE 11 support
+    ]),
     new StyleLintPlugin(),
     new webpack.BannerPlugin(banner),
     new webpack.ProvidePlugin({
