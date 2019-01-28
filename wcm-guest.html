@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='UTF-8'>
+    <meta name="description" content="Weill Cornell Medicine Guest Network">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wcmc-its/wcm-styles@v0.4.11/dist/wcm.css">
+
+    <title>WCM Guest</title>
+
+    <meta property="og:title" content="WCM Guest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://weill.cornell.edu/" />
+    <meta property="og:image" content="https://wcmc-its.github.io/wcm-styles/images/WCM_MB_LOGO_HZSS2L_CLR_RGB.png" />
+
+  </head>
+  <body data-offset="55" data-target="#navbar-collapse-links" data-spy="scroll">
+    <header>
+      <nav class="bg-primary fixed-top navbar navbar-dark navbar-expand-xl navbar-wcm ">
+        <div class="container">
+          <a class="navbar-brand" href="http://weill.cornell.edu/">
+            <img title="WCM Logo" src="https://wcmc-its.github.io/wcm-styles/images/wcm-logo-1line-white.png" alt="Wcm logo 1line white">
+          </a>
+      </nav>
+    </header>
+
+    <div class="container mt-4" id="main">
+      <div class="row">
+        <div class="col">
+          <h3>WCM Guest Network</h3>
+        </div>
+      </div>
+
+      <section id="disclaimer">
+        <div class="row card">
+          <div class="card-header">Disclaimer</div>
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-outline-primary mx-1">Accept</button>
+          </div>
+        </div>
+      </section>
+    </div><!-- main container -->
+
+    <footer class="mt-4">
+      <nav class="bg-dark navbar-dark " role="navigation">
+        <div class="container">
+          <div class="navbar-text">
+            <small>
+              © <span id="year"></span>
+              Weill Cornell Medicine. Reproduction, electronic or otherwise, without the permission of
+              Weill Cornell Medicine is strictly forbidden. All Rights Reserved.
+            </small>
+          </div>
+      </nav>
+    </footer>
+
+    <script>
+      var date = new Date()
+
+      document.getElementById('year').innerHTML = date.getFullYear()
+    </script>
+  </body>
+</html>
