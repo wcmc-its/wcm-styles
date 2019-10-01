@@ -33,8 +33,17 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            { loader: 'css-loader', options: { minimize: true } },
-            'sass-loader'
+            { loader: 'css-loader', options: { importLoaders: 0 } },
+            // {
+            //   loader: 'postcss-loader',
+            //   options: {
+            //     parser: 'postcss-scss', // Why ?
+            //     // sourceMap: true
+            //     config: { ctx: { cssnano: {} } }
+            //   }
+            // },
+            'postcss-loader',
+            'sass-loader',
           ]
         })
       },
