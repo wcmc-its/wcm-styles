@@ -33,7 +33,7 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            { loader: 'css-loader', options: { importLoaders: 0 } },
+            { loader: 'css-loader', options: { importLoaders: 2 } },
             'postcss-loader', // Minimize CSS using cssnano plugin for postcss-loader
             'sass-loader',
           ]
