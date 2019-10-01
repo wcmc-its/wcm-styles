@@ -34,15 +34,7 @@ module.exports = {
           fallback: 'style-loader',
           use: [
             { loader: 'css-loader', options: { importLoaders: 0 } },
-            // {
-            //   loader: 'postcss-loader',
-            //   options: {
-            //     parser: 'postcss-scss', // Why ?
-            //     // sourceMap: true
-            //     config: { ctx: { cssnano: {} } }
-            //   }
-            // },
-            'postcss-loader',
+            'postcss-loader', // Minimize CSS using cssnano plugin for postcss-loader
             'sass-loader',
           ]
         })
