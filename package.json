@@ -27,7 +27,7 @@
     "file-loader": "^1.1.11",
     "http-server": "^0.10.0",
     "mem": ">=4.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "postcss-loader": "^3.0.0",
     "postcss-scss": "^2.0.0",
     "sass-loader": "^7.3.1",
